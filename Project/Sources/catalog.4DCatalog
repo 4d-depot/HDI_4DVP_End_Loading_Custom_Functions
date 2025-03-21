@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="HDI_4DVP_End_Loading_Custom_Functions" uuid="2D4F6103DC084198BFC0283C03D0A0B2" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="INFO" uuid="107A367EBCC346259FD971E8FC1097DA" id="1">
+		<field name="ID" uuid="C6DBB917EEE44AF9BDA57ABA22C55C6B" type="4" unique="true" autosequence="true" not_null="true" id="1">
+			<field_extra position="1"/>
+		</field>
+		<field name="Description" uuid="C9EFE648E9234AADA33FB25D61C0190B" type="10" never_null="true" id="2">
+			<field_extra position="4"/>
+		</field>
+		<field name="TabTitle" uuid="58AF214936C941439CB263026A5B46ED" type="10" limiting_length="255" never_null="true" id="3">
+			<field_extra position="3"/>
+		</field>
+		<field name="PageNumber" uuid="A2D86BBFD5134D06999CBDD14FD07A27" type="4" never_null="true" id="4">
+			<field_extra position="2"/>
+		</field>
+		<primary_key field_name="ID" field_uuid="C6DBB917EEE44AF9BDA57ABA22C55C6B"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info fields_ordering="2" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="0" top="0" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="People" uuid="FB2A727F4EFB7A47812F25B46036D27D" id="7" prevent_journaling="true">
+		<field name="Address" uuid="A6D18FBF3837254BB131BB07FA74903E" type="10" id="1"/>
+		<field name="Birthday" uuid="B38456A92C27ED428E361412050EB40B" type="8" id="2"/>
+		<field name="Cell" uuid="0256E310D3CD4C448AD0A943E3817B64" type="10" id="3"/>
+		<field name="City" uuid="B05E1199A31E2B4B982FB5D7B27C4535" type="10" id="4"/>
+		<field name="Country" uuid="E938347C0323C84EA71E196332DA34B3" type="10" id="5"/>
+		<field name="email" uuid="38ED3D98F239124A8D2D411C947F373C" type="10" id="6"/>
+		<field name="FatherID" uuid="59C59AC15A3EF44B82A01246A53433F7" type="4" id="7"/>
+		<field name="Firstname" uuid="4F062F7D64B67244849B32456EC42E8A" type="10" id="8"/>
+		<field name="Gender" uuid="C6BC0C886504A645BEF1079D2820028B" type="1" id="9"/>
+		<field name="ID" uuid="ED45950190C65847807C3AB1BF0AC7C8" type="4" unique="true" autosequence="true" id="10"/>
+		<field name="Lastname" uuid="C71153D3294CF342BCB6DA129BE92E35" type="10" id="11"/>
+		<field name="MotherID" uuid="90A372EF8C371543A57696A93BBFC977" type="4" id="12"/>
+		<field name="PartnerID" uuid="DD689307A6EAA345926549C7A93C8F4C" type="4" id="13"/>
+		<field name="Phone" uuid="E1DFA6760757C64286DE4C710874D7F6" type="10" id="14"/>
+		<field name="Portrait_L" uuid="97957F83D8FCFD43896A892BA65DC7D7" type="12" id="15"/>
+		<field name="Portrait_S" uuid="2E5E436FC0CB2A4EB6AF58A324FEC44B" type="12" id="16"/>
+		<field name="Title" uuid="AD6B2E6A6B6CA0489ABAAE7290EB4366" type="10" id="17"/>
+		<field name="ZipCode" uuid="79824B8C28613A458AAA10125084CA66" type="10" id="18"/>
+		<primary_key field_name="ID" field_uuid="ED45950190C65847807C3AB1BF0AC7C8"/>
+		<table_extra output_form="Output" input_form="Input">
+			<editor_table_info displayable_fields_count="33">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="520" top="8" width="260" height="742.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="AE75B6898B9BA24DACF4213B05199230" type="7">
+		<field_ref uuid="ED45950190C65847807C3AB1BF0AC7C8" name="ID">
+			<table_ref uuid="FB2A727F4EFB7A47812F25B46036D27D" name="People"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B17E3BF54450493DB72FBD48A5745784" type="7">
+		<field_ref uuid="C6DBB917EEE44AF9BDA57ABA22C55C6B" name="ID">
+			<table_ref uuid="107A367EBCC346259FD971E8FC1097DA" name="INFO"/>
+		</field_ref>
+	</index>
+	<base_extra package_name="HDI_Template_v17" structure_file_name="HowDoI" data_file_path="\HowDoI.4DD">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>

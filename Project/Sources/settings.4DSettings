@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="16">
+	<com.4d>
+		<deployment>
+			<options/>
+		</deployment>
+		<general startup_environnement="1"/>
+		<interface>
+			<user splash_screen="false"/>
+		</interface>
+		<compiler>
+			<options compilation_path="4"/>
+		</compiler>
+		<server>
+			<network>
+				<options publication_name="HowDoI" use_legacy_network_layer="false"/>
+				<client_server use_encryption="false"/>
+			</network>
+		</server>
+		<database>
+			<misc standard_xpath="false"/>
+		</database>
+		<web>
+			<standalone_server>
+				<webservices>
+					<server name="4dsoap"/>
+				</webservices>
+				<configuration allow_ssl="false" port_number="80" publish_at_startup="false">
+					<hosts>
+						<host html_root="./WebFolder/" id="0" name="0"/>
+					</hosts>
+				</configuration>
+				<options>
+					<cache cache_max_size="524288"/>
+				</options>
+			</standalone_server>
+			<remote>
+				<configuration port_number="80" publish_at_startup="true">
+					<hosts>
+						<host html_root="C:/Users/fmainguene/Perforce/fabrice.mainguene_VM10-MAINGUENE_5042/depot/4DDatabases/HDIs/vMain/HDI_Web_Service_Preemptive.4dbase/WebFolder/" id="default"/>
+					</hosts>
+				</configuration>
+				<webservices>
+					<server name="4dsoap"/>
+				</webservices>
+			</remote>
+		</web>
+	</com.4d>
+</preferences>

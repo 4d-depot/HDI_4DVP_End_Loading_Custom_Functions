@@ -1,0 +1,198 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onTimer",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 864,
+					"height": 665,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"Trace": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 661,
+					"left": 29,
+					"width": 117,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"sizingY": "move"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information": {
+					"type": "input",
+					"top": 59,
+					"left": 29,
+					"width": 800,
+					"height": 592,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[0].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"method": "ObjectMethods/information.4dm"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable": {
+					"type": "input",
+					"top": 60,
+					"left": 28,
+					"width": 840,
+					"height": 64,
+					"dataSource": "Infos[1].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"text": "Create PDF",
+					"top": 358,
+					"left": 327,
+					"width": 217,
+					"height": 32,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm",
+					"fontSize": 20
+				},
+				"Thermometer": {
+					"type": "progress",
+					"left": 137,
+					"top": 416,
+					"width": 598,
+					"height": 33,
+					"max": 100,
+					"min": 0,
+					"dataSource": "Form:C1466.barAdvancement",
+					"visibility": "hidden"
+				},
+				"Input": {
+					"type": "input",
+					"left": 139,
+					"top": 416,
+					"width": 593,
+					"height": 29,
+					"hideFocusRing": true,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dataSource": "Form:C1466.textProgressBar",
+					"fontSize": 20
+				},
+				"Input1": {
+					"type": "input",
+					"left": 225,
+					"top": 141,
+					"width": 598,
+					"height": 33,
+					"dataSource": "Form:C1466.pdfPath",
+					"fontSize": 20
+				},
+				"Text": {
+					"type": "text",
+					"text": "PDF path:",
+					"top": 141,
+					"left": 40,
+					"width": 176,
+					"height": 32,
+					"textAlign": "right",
+					"fontSize": 20
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 253,
+					"left": 29,
+					"width": 840,
+					"height": 96,
+					"dataSource": "Infos[2].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"Guides": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 659
+}

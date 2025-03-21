@@ -1,0 +1,807 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerBody": 753,
+	"markerBreak": 753,
+	"markerFooter": 763,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "594pt",
+		"paperHeight": "841pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vRecNum": {
+					"type": "input",
+					"top": 95,
+					"left": 504,
+					"width": 100,
+					"height": 13,
+					"stroke": "#000000",
+					"fontFamily": "Segoe UI",
+					"fontSize": 9,
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Record Number"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"Text19": {
+					"type": "text",
+					"top": 93,
+					"left": 24,
+					"width": 465,
+					"height": 15,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"text": "Recipes"
+				},
+				"Line20": {
+					"type": "line",
+					"top": 77,
+					"left": 19,
+					"width": 594,
+					"sizingX": "grow"
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 21,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/FirstRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 84,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/PreviousRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 147,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/NextRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 210,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/LastRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bDelete": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 273,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"action": "deleteRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/DeleteRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 336,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 16,
+					"left": 399,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text21": {
+					"type": "text",
+					"top": 126,
+					"left": 192,
+					"width": 112,
+					"height": 15,
+					"textAlign": "right",
+					"text": "ID : "
+				},
+				"Text22": {
+					"type": "text",
+					"top": 152,
+					"left": 192,
+					"width": 112,
+					"height": 15,
+					"textAlign": "right",
+					"text": "Name : "
+				},
+				"Text23": {
+					"type": "text",
+					"top": 178,
+					"left": 192,
+					"width": 112,
+					"height": 15,
+					"textAlign": "right",
+					"text": "Ingredients : "
+				},
+				"Text24": {
+					"type": "text",
+					"top": 178,
+					"left": 580,
+					"width": 112,
+					"height": 15,
+					"textAlign": "right",
+					"text": "Directions : "
+				},
+				"Text25": {
+					"type": "text",
+					"top": 462,
+					"left": 192,
+					"width": 112,
+					"height": 15,
+					"textAlign": "right",
+					"text": "CookTime : "
+				},
+				"Text26": {
+					"type": "text",
+					"top": 488,
+					"left": 192,
+					"width": 112,
+					"height": 15,
+					"textAlign": "right",
+					"text": "PreparationTime : "
+				},
+				"Text27": {
+					"type": "text",
+					"top": 514,
+					"left": 192,
+					"width": 112,
+					"height": 15,
+					"textAlign": "right",
+					"text": "Calories : "
+				},
+				"Text28": {
+					"type": "text",
+					"top": 540,
+					"left": 192,
+					"width": 112,
+					"height": 15,
+					"textAlign": "right",
+					"text": "Nutrition1Number : "
+				},
+				"Text29": {
+					"type": "text",
+					"top": 566,
+					"left": 192,
+					"width": 112,
+					"height": 15,
+					"textAlign": "right",
+					"text": "Nutrition1Label : "
+				},
+				"Text30": {
+					"type": "text",
+					"top": 592,
+					"left": 192,
+					"width": 112,
+					"height": 15,
+					"textAlign": "right",
+					"text": "Nutrition2Number : "
+				},
+				"Text31": {
+					"type": "text",
+					"top": 618,
+					"left": 192,
+					"width": 112,
+					"height": 15,
+					"textAlign": "right",
+					"text": "Nutrition2Label : "
+				},
+				"Text32": {
+					"type": "text",
+					"top": 644,
+					"left": 192,
+					"width": 112,
+					"height": 15,
+					"textAlign": "right",
+					"text": "Nutrition3Number : "
+				},
+				"Text33": {
+					"type": "text",
+					"top": 670,
+					"left": 192,
+					"width": 112,
+					"height": 15,
+					"textAlign": "right",
+					"text": "Nutrition3Label : "
+				},
+				"Text34": {
+					"type": "text",
+					"top": 696,
+					"left": 192,
+					"width": 112,
+					"height": 15,
+					"textAlign": "right",
+					"text": "Nutrition4Number : "
+				},
+				"Text35": {
+					"type": "text",
+					"top": 722,
+					"left": 192,
+					"width": 112,
+					"height": 15,
+					"textAlign": "right",
+					"text": "Nutrition4Label : "
+				},
+				"Text36": {
+					"type": "text",
+					"top": 748,
+					"left": 192,
+					"width": 112,
+					"height": 15,
+					"textAlign": "right",
+					"text": "Picture : "
+				},
+				"ID": {
+					"type": "input",
+					"top": 126,
+					"left": 309,
+					"width": 48,
+					"height": 16,
+					"dataSource": "[Recipes:6]ID:1",
+					"dataSourceTypeHint": "integer",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Name": {
+					"type": "input",
+					"top": 152,
+					"left": 309,
+					"width": 280,
+					"height": 16,
+					"dataSource": "[Recipes:6]Name:2",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Ingredients": {
+					"type": "input",
+					"top": 178,
+					"left": 309,
+					"width": 234,
+					"height": 272,
+					"dataSource": "[Recipes:6]Ingredients:3",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Directions": {
+					"type": "input",
+					"top": 178,
+					"left": 697,
+					"width": 234,
+					"height": 272,
+					"dataSource": "[Recipes:6]Directions:4",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CookTime": {
+					"type": "input",
+					"top": 462,
+					"left": 309,
+					"width": 42,
+					"height": 16,
+					"dataSource": "[Recipes:6]CookTime:5",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"PreparationTime": {
+					"type": "input",
+					"top": 488,
+					"left": 309,
+					"width": 42,
+					"height": 16,
+					"dataSource": "[Recipes:6]PreparationTime:6",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Calories": {
+					"type": "input",
+					"top": 514,
+					"left": 309,
+					"width": 42,
+					"height": 16,
+					"dataSource": "[Recipes:6]Calories:7",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Nutrition1Number": {
+					"type": "input",
+					"top": 540,
+					"left": 309,
+					"width": 54,
+					"height": 16,
+					"dataSource": "[Recipes:6]Nutrition1Number:8",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Nutrition1Label": {
+					"type": "input",
+					"top": 566,
+					"left": 309,
+					"width": 280,
+					"height": 16,
+					"dataSource": "[Recipes:6]Nutrition1Label:9",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Nutrition2Number": {
+					"type": "input",
+					"top": 592,
+					"left": 309,
+					"width": 54,
+					"height": 16,
+					"dataSource": "[Recipes:6]Nutrition2Number:10",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Nutrition2Label": {
+					"type": "input",
+					"top": 618,
+					"left": 309,
+					"width": 280,
+					"height": 16,
+					"dataSource": "[Recipes:6]Nutrition2Label:11",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Nutrition3Number": {
+					"type": "input",
+					"top": 644,
+					"left": 309,
+					"width": 54,
+					"height": 16,
+					"dataSource": "[Recipes:6]Nutrition3Number:12",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Nutrition3Label": {
+					"type": "input",
+					"top": 670,
+					"left": 309,
+					"width": 280,
+					"height": 16,
+					"dataSource": "[Recipes:6]Nutrition3Label:13",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Nutrition4Number": {
+					"type": "input",
+					"top": 696,
+					"left": 309,
+					"width": 54,
+					"height": 16,
+					"dataSource": "[Recipes:6]Nutrition4Number:14",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Nutrition4Label": {
+					"type": "input",
+					"top": 722,
+					"left": 309,
+					"width": 280,
+					"height": 16,
+					"dataSource": "[Recipes:6]Nutrition4Label:15",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Picture": {
+					"type": "input",
+					"top": 748,
+					"left": 309,
+					"width": 334,
+					"height": 250,
+					"dataSource": "[Recipes:6]Picture:16",
+					"dataSourceTypeHint": "picture",
+					"textAlign": "left",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "visible",
+					"dragging": "custom",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"vRecNum",
+					"Text19",
+					"Line20"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"bFirst",
+					"bPrevious",
+					"bNext",
+					"bLast",
+					"bDelete",
+					"bCancel",
+					"bValidate"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

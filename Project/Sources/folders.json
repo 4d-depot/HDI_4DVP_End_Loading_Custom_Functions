@@ -1,0 +1,35 @@
+{
+	"Allowed Method": {},
+	"Default Folder": {
+		"groups": [
+			"Allowed Method",
+			"Default Forms",
+			"Default Project Methods",
+			"Default Tables",
+			"Init"
+		]
+	},
+	"Default Forms": {
+		"forms": [
+			"HDI",
+			"HDI2"
+		]
+	},
+	"Default Project Methods": {
+		"methods": [
+			"00_Start",
+			"m_Quit"
+		]
+	},
+	"Default Tables": {
+		"tables": [
+			"INFO"
+		],
+		"forms": [
+			"[INFO]Input",
+			"[INFO]Output"
+		]
+	},
+	"Init": {},
+	"trash": {}
+}
